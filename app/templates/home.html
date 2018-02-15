@@ -11,5 +11,8 @@
         <div ng-repeat="room in home.rooms">
             <h3>{{room.$value}}</h3>
         </div>
+        <div class="new-room-button">
+            <span class="new-room-button" type="button" ng-click="home.addRoom()">Add New Room</span>
+        </div>
     </section>
 </div>
