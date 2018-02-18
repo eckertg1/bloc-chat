@@ -1,17 +1,16 @@
 (function(){
-  function ModalCtrl(Room, $uibModalInstance){
+  function ModalCtrl($uibModalInstance){
     this.cancel = function(){
       $uibModalInstance.dismiss('cancel');
     };
 
     this.submit = function(){
-      Room.add(this.newRoom);
-      $uibModalInstance.close();
+      $uibModalInstance.close(this.newRoom);
     };
 
   };
 
   angular
     .module('blocChat')
-    .controller('ModalCtrl', ['Room', '$uibModalInstance', ModalCtrl]);
+    .controller('ModalCtrl', ['$uibModalInstance', ModalCtrl]);
 })();
