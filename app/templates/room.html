@@ -1,0 +1,29 @@
+<section class="banner">
+    <h1 id="home-title">Bloc Chat</h1>
+</section>
+
+<div class="sidebar">
+    <div class="header">
+        <h2 class="title">Chat Rooms</h2>
+    </div>
+
+    <section class="rooms-list">
+        <div ng-repeat="data in room.rooms">
+            <button class="open-room-button" type='button' ng-click="room.changeRoom(data)">{{data.$value}}</button>
+        </div>
+        <div class="new-room-button">
+            <button class="new-room-button" type="button" ng-click="room.addRoom()">Add New Room</button>
+        </div>
+    </section>
+</div>
+
+<div class='Room-header'>
+  <h2>{{room.roomHeader}}</h2>
+</div>
+<div class='Room-body'>
+  <table ng-repeat="messageLog in room.roomMessages">
+    <tr>
+      <td>{{messageLog.content}}</td>
+    </tr>
+  </table>
+</div>

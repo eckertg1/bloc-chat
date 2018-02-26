@@ -1,14 +1,25 @@
 .banner #home-title {
+    background-color: #B5B4B5;
     text-align: center;
+    margin:auto;
 }
 
 .sidebar {
+    float:left;
     clear: both;
     background-color: #B5B4B5;
     height: 1000px;
+    width: 300px;
 }
 
 .sidebar .header {
     margin: auto;
     padding-top: 15px;
+}
+
+.Room-header{
+  margin:auto;
+  text-align: center;
+  width: 100%;
+  padding-left: 15px;
 }
