@@ -15,6 +15,17 @@
   }
 
   angular
-    .module('blocChat', ['ui.bootstrap', 'ui.router', 'firebase'])
-    .config(config);
+    .module('blocChat', ['ui.bootstrap', 'ui.router', 'firebase', 'ngCookies'])
+    .config(config)
+    .run(['$cookies', '$uibModal', function($cookies, $uibModal){
+        if (!$cookies.blocChatCurrentUser || $cookies.blocChatCurrentUser === ''){
+          $uibModal.open({
+            templateUrl: '/templates/login.html',
+            controller: 'LoginCtrl as login',
+            size: 'sm',
+            backdrop: 'static'
+          });
+        }
+
+    }]);
 })();

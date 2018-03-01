@@ -5,17 +5,32 @@
 }
 
 .sidebar {
-    float:left;
+    position:fixed;
+    top:0;
+    left:0;
     clear: both;
     background-color: #B5B4B5;
-    height: 1000px;
     width: 300px;
+    height: -webkit-fill-available;
 }
 
 .sidebar .header {
     margin: auto;
     padding-top: 15px;
 }
+
+.odd{
+  background-color: lightgray;
+}
+table{
+  margin-left: 300px;
+  width:-webkit-fill-available;
+}
+td{
+  margin-left: 300px;
+  width:-webkit-fill-available;
+}
+
 
 .Room-header{
   margin:auto;
