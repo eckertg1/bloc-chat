@@ -23,7 +23,7 @@
 <div class='Room-body'>
   <table ng-repeat="messageLog in room.roomMessages">
     <tr>
-      <td ng-class-odd="'odd'">{{messageLog.content}}</td>
+      <td ng-class-odd="'odd'">{{messageLog.username}}: {{messageLog.content}}</td>
     </tr>
   </table>
 </div>
