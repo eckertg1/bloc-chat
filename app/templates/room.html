@@ -27,3 +27,8 @@
     </tr>
   </table>
 </div>
+
+<div class='Room-message'>
+  <textarea rows="3" cols="50" ng-model="upMessage"></textarea>
+  <button class="message-submit-button" type="button" ng-click="room.postMessage(upMessage, room.currentRoom)">Submit</button>
+</div>

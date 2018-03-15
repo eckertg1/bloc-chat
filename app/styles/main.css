@@ -31,6 +31,9 @@ td{
   width:-webkit-fill-available;
 }
 
+.Room-message{
+  margin-left: 300px;
+}
 
 .Room-header{
   margin:auto;

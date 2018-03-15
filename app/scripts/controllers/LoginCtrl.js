@@ -4,7 +4,6 @@
     this.createUserName = function(userName){
       if(userName && userName !== ''){
         $cookies.blocChatCurrentUser = userName;
-        
         $uibModalInstance.close('exit');
       }
 
